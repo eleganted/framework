@@ -1,0 +1,44 @@
+{
+    "name": "eleganted/framework",
+    "description": "framework",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "ToToRiina",
+            "email": "themonserdev@gmail.com"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/eleganted/framework/issues",
+        "source": "https://github.com/eleganted/framework"
+    },
+    "require": {
+        "php": "^7.4|^8.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    },
+    "replace": {
+        "eleganted/app": "self.version",
+        "eleganted/container": "self.version",
+        "eleganted/http": "self.version"
+    },
+    "autoload": {
+        "psr-4": {
+            "Eleganted\\": "src/Eleganted"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Eleganted\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.x-dev"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
